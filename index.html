@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twilight Struggle - مرجع فارسی</title>
+    <!-- استفاده از Tailwind CSS برای طراحی ساده و مدرن -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- استایل‌های سفارشی و فونت -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #111827; /* پس‌زمینه بسیار تیره */
+            color: #d1d5db; /* رنگ متن خاکستری روشن */
+        }
+        
+        .header-gradient {
+            background: linear-gradient(to right, #991b1b, #1e3a8a); /* گرادینت قرمز و آبی تیره‌تر */
+        }
+
+        .section-card {
+            background-color: #1f2937; /* پس‌زمینه کارت‌ها */
+            border: 1px solid #374151;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, #ef4444, #3b82f6);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- هدر صفحه -->
+    <header class="header-gradient text-white shadow-xl">
+        <div class="container mx-auto px-6 py-16 text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold tracking-wider">Twilight Struggle</h1>
+            <p class="mt-4 text-xl text-gray-300">مرجع جامع فارسی بازی رومیزی نبرد گرگ و میش</p>
+        </div>
+    </header>
+
+    <!-- بخش اصلی محتوا -->
+    <main class="container mx-auto px-6 py-12">
+        
+        <!-- بخش معرفی بازی -->
+        <section id="about" class="mb-20">
+            <h2 class="section-title text-3xl font-bold mb-8 text-center">درباره بازی</h2>
+            <div class="section-card p-8 rounded-xl shadow-lg">
+                <p class="text-lg leading-loose text-center">
+                    Twilight Struggle یک بازی رومیزی دو نفره است که جنگ سرد و رقابت بین دو ابرقدرت، ایالات متحده آمریکا و اتحاد جماهیر شوروی، را شبیه‌سازی می‌کند. بازیکنان در طول ۴۵ سال تاریخ، از پایان جنگ جهانی دوم تا فروپاشی شوروی، برای کسب نفوذ و کنترل جهان با یکدیگر رقابت می‌کنند. این بازی با استفاده از کارت‌هایی که رویدادهای تاریخی واقعی را نمایندگی می‌کنند، تجربه‌ای عمیق و استراتژیک از تنش‌های سیاسی و نظامی آن دوران را ارائه می‌دهد.
+                </p>
+            </div>
+        </section>
+
+        <!-- بخش اطلاعات کلی -->
+        <section id="details" class="mb-20">
+            <h2 class="section-title text-3xl font-bold mb-8 text-center">مشخصات کلیدی</h2>
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="section-card p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-2 text-blue-400">بازیکنان</h3>
+                    <p class="text-3xl font-bold">۲ نفر</p>
+                </div>
+                <div class="section-card p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-2 text-gray-300">زمان بازی</h3>
+                    <p class="text-3xl font-bold">۱۲۰-۱۸۰ دقیقه</p>
+                </div>
+                <div class="section-card p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-2 text-red-400">سطح پیچیدگی</h3>
+                    <p class="text-3xl font-bold">بالا</p>
+                </div>
+                <div class="section-card p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-2 text-green-400">زبان</h3>
+                    <p class="text-3xl font-bold">فارسی</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- بخش کارت‌ها (به عنوان پیش‌نمایش برای آینده) -->
+        <section id="cards">
+            <h2 class="section-title text-3xl font-bold mb-8 text-center">راهنمای کارت‌ها</h2>
+            <div class="section-card p-8 rounded-xl shadow-lg text-center">
+                <p class="text-lg mb-6 leading-loose">
+                    قلب تپنده بازی، ۱۱۰ کارت رویداد آن است. به زودی در این بخش، راهنمای کامل تمام کارت‌های بازی به همراه تحلیل و نکات استراتژیک آن‌ها به زبان فارسی قرار خواهد گرفت.
+                </p>
+                <button class="bg-gray-700 text-white font-bold py-3 px-8 rounded-lg shadow-md cursor-not-allowed opacity-50">
+                    به زودی فعال می‌شود
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- فوتر -->
+    <footer class="bg-gray-900 mt-20 py-8 border-t border-gray-700">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; ۱۴۰۳ - مرجع فارسی Twilight Struggle. طراحی شده برای بهترین تجربه استراتژیک.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
